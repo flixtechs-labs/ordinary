@@ -1,4 +1,32 @@
 {
   "name": "ordinary",
-  "packageManager": "yarn@4.0.1"
+  "packageManager": "yarn@4.0.1",
+  "description": "The extra ordinary validation package for express applications",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flixtechs-labs/ordinary.git"
+  },
+  "keywords": [
+    "express",
+    "validation",
+    "express",
+    "validate",
+    "validate",
+    "express",
+    "app",
+    "validation",
+    "node",
+    "validation"
+  ],
+  "author": "Flix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flixtechs-labs/ordinary/issues"
+  },
+  "homepage": "https://github.com/flixtechs-labs/ordinary#readme"
 }
