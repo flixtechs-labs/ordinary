@@ -13,7 +13,7 @@ There are already validation packages that work with express already, why anothe
 This package can be installed from npm in an existing express js app
 
 ```bash
-yarn add ordinary.js
+yarn add @flixtechs/ordinary
 ```
 
 ## Usage/Examples
@@ -22,7 +22,7 @@ Using this package is easy, you just need to register the middleware and error h
 Then register the error handler after all your middleware has been registered but before your custom error handler so other errors that are not validation errors can be handled
 
 ```javascript
-import { ordinary, remarkable } from 'ordinary.js'
+import { ordinary, remarkable } from '@flixtechs/ordinary'
 
 // register body parser and what not
 
