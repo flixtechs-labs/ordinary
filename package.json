@@ -1,8 +1,8 @@
 {
-  "name": "ordinary.js",
+  "name": "@flixtechs/ordinary",
   "packageManager": "yarn@4.0.1",
   "description": "The extra ordinary validation package for express applications",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -49,5 +49,8 @@
     "singleQuote": true,
     "tabWidth": 4,
     "useTabs": false
+  },
+  "directories": {
+    "test": "test"
   }
 }
