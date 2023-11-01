@@ -12,3 +12,4 @@
 #!.yarn/cache
 .pnp.*
 .idea
+yarn.lock
