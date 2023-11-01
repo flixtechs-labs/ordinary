@@ -42,6 +42,7 @@
   },
   "dependencies": {
     "collect.js": "^4.36.1",
+    "express": "^4.18.2||>=5.0.0-beta.1",
     "simple-body-validator": "^1.3.0"
   },
   "prettier": {
