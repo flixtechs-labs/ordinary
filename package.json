@@ -1,8 +1,8 @@
 {
-  "name": "ordinary",
+  "name": "ordinary.js",
   "packageManager": "yarn@4.0.1",
   "description": "The extra ordinary validation package for express applications",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "type": "module",
   "scripts": {
