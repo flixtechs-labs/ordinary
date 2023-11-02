@@ -47,7 +47,7 @@ router.post('/login', async (req, res, next) => {
 
     //compare password
 
-    return res.back()
+    return res.redirect('back')
 
 }
 
@@ -103,7 +103,7 @@ router.post('/register', async (req, res, next) => {
 
     await User.create(req.safe().all())
 
-    return res.back()
+    return res.redirect('back')
 
 }
 ```
@@ -122,7 +122,7 @@ router.post('/register', async (req, res, next) => {
 
     await User.create(req.validated())
 
-    return res.back()
+    return res.redirect('back')
 
 }
 ```
@@ -140,7 +140,7 @@ router.post('/register', async (req, res, next) => {
 
     await User.create(req.validated('email', 'password')) //name will not be included
 
-    return res.back()
+    return res.redirect('back')
 
 }
 ```
