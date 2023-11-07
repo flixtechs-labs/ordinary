@@ -2,13 +2,13 @@
   "name": "@flixtechs/ordinary",
   "packageManager": "yarn@4.0.1",
   "description": "The extra ordinary validation package for express applications",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "main": "index.js",
   "type": "module",
   "exports": {
     "import": "./index.js",
     "require": "./index.cjs"
-  }
+  },
   "scripts": {
     "test": "mocha",
     "prepare": "rollup index.js --file index.cjs --format cjs"
