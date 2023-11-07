@@ -2,11 +2,16 @@
   "name": "@flixtechs/ordinary",
   "packageManager": "yarn@4.0.1",
   "description": "The extra ordinary validation package for express applications",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
   "type": "module",
+  "exports": {
+    "import": "./index.js",
+    "require": "./index.cjs"
+  },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "prepare": "rollup index.js --file index.cjs --format cjs"
   },
   "repository": {
     "type": "git",
@@ -43,6 +48,7 @@
   "dependencies": {
     "collect.js": "^4.36.1",
     "express": "^4.18.2||>=5.0.0-beta.1",
+    "rollup": "^4.3.0",
     "simple-body-validator": "^1.3.0"
   },
   "prettier": {
