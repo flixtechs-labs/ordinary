@@ -10,8 +10,8 @@ export const remarkable = (error, req, res, next) => {
             });
         }
 
-        req.session?.errors = error.errors;
-        req.session?.old = req.body;
+        req.session.errors = error.errors;
+        req.session.old = req.body;
 
         return res.redirect('back');
     }
