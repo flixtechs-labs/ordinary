@@ -2,7 +2,7 @@
   "name": "@flixtechs/ordinary",
   "packageManager": "yarn@4.0.1",
   "description": "The extra ordinary validation package for express applications",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "index.js",
   "type": "module",
   "exports": {
@@ -48,6 +48,7 @@
   "dependencies": {
     "collect.js": "^4.36.1",
     "express": "^4.18.2||>=5.0.0-beta.1",
+    "express-session": "^1.17.3",
     "rollup": "^4.3.0",
     "simple-body-validator": "^1.3.0"
   },

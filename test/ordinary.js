@@ -2,6 +2,7 @@ import request from 'supertest';
 import { expect } from 'chai';
 import { faker } from '@faker-js/faker';
 import express from 'express';
+import session from 'express-session';
 import { ordinary, remarkable, ValidationError } from '../index.js';
 
 let app;
@@ -10,6 +11,11 @@ beforeEach((done) => {
     app = express();
     app.use(express.json());
     app.use(express.urlencoded({ extended: true }));
+    app.use(session({
+        secret: 'secret',
+        resave: false,
+        saveUninitialized: true,
+    }));
     app.use(ordinary(app));
     done();
 });
