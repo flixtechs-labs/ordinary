@@ -4,6 +4,11 @@ import { ValidationError } from './Error/ValidationError.js';
 import { make } from 'simple-body-validator';
 
 export default (app) => (req, res, next) => {
+    if (!req.session) {
+        //throw an error that session middleware is not registered
+        throw new Error('Ordinary validation package requires session middleware to be registered');
+    }
+
     app.request.body = req.body;
     FormRequest.prototype.request = req;
 
