@@ -2,7 +2,7 @@
   "name": "@flixtechs/ordinary",
   "packageManager": "yarn@4.0.1",
   "description": "The extra ordinary validation package for express applications",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "index.js",
   "type": "module",
   "exports": {
